@@ -85,7 +85,7 @@
                         <RowDefinition Height="80"/>
                         <RowDefinition Height="150"/>
                         <RowDefinition Height="100"/>
-                        <RowDefinition MinHeight="150"/>
+                        <RowDefinition Height="*" MinHeight="120"/>
                     </Grid.RowDefinitions>
 
                     <Label FontSize="25" Foreground="#ec2075" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Content="Currency Master" FontWeight="Bold"/>
@@ -124,7 +124,7 @@
                         <Button  Foreground="White" Height="40" Width="150" Background="#ec2075" Content="Cancel" Style="{StaticResource ButtonStyling}" Click="Cancel_Click"/>
                     </StackPanel>
 
-                    <DataGrid  AutoGenerateColumns="False" Background="Transparent" CanUserAddRows="False" SelectedCellsChanged="CurrenciesTable_SelectedCellsChanged" Width="400" x:Name="CurrenciesTable" SelectionUnit="Cell" Margin="40,5" Grid.Row="4">
+                    <DataGrid VerticalScrollBarVisibility="Auto" AutoGenerateColumns="False" Background="Transparent" CanUserAddRows="False" SelectedCellsChanged="CurrenciesTable_SelectedCellsChanged" Width="400" x:Name="CurrenciesTable" SelectionUnit="Cell" Margin="40,5" Grid.Row="4">
                         <DataGrid.Columns>
                             <DataGridTemplateColumn >
                                 <DataGridTemplateColumn.CellTemplate>

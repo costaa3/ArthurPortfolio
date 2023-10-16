@@ -184,8 +184,35 @@ namespace CurrencyConverter
         {
             DataGrid dtg = sender as DataGrid;
             DataRowView rowSelection = dtg.CurrentItem as DataRowView;
-            MessageBox.Show(rowSelection["Id"].ToString());
-            
+            string selectedId = rowSelection["Id"].ToString();
+            if (dtg.SelectedCells.Count==0)
+            {
+                return;
+            }
+            var ColumnSelection = dtg.SelectedCells[0].Column.DisplayIndex = 0;
+            string sqlCommand;
+            switch (ColumnSelection)
+            {
+                case 0:
+                    sqlCommand = "DELETE FROM Currency_Master where Id = @Id";
+                    break;
+                case 1:
+                    sqlCommand = @"";
+                    break;
+                default:
+                    return;
+
+              
+            }
+            using(var con = EstablishConnection())
+            {
+                con.Open();
+                cmd = new SqlCommand(sqlCommand, con);
+                cmd.Parameters.AddWithValue("@Id", selectedId);
+                cmd.ExecuteNonQuery();
+            }
+
+            UpdateTable();
         }
 
         private void UpdateTable()
@@ -199,6 +226,7 @@ namespace CurrencyConverter
                 ada.Fill(myData);
                 CurrenciesTable.ItemsSource = myData.DefaultView;
             }
+            BindingCurrencies();
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
