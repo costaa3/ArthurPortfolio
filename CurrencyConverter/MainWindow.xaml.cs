@@ -182,8 +182,10 @@ namespace CurrencyConverter
 
         private void CurrenciesTable_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
         {
-            TableRow selection = sender as TableRow;
-        
+            DataGrid dtg = sender as DataGrid;
+            DataRowView rowSelection = dtg.CurrentItem as DataRowView;
+            MessageBox.Show(rowSelection["Id"].ToString());
+            
         }
 
         private void UpdateTable()
@@ -213,7 +215,9 @@ namespace CurrencyConverter
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-
+            EnterAmountInput.Text = string.Empty;
+            CurrencyNameSelection.Text= string.Empty;
+            CurrenciesTable.SelectedIndex = -1;
         }
     }
 }
