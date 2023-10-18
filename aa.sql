@@ -1,0 +1,1 @@
+﻿delete from Animal where  Animal.Id = 7
