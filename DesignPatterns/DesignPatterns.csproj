@@ -43,6 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\Data processor\DataProcessor.cs" />
+    <Compile Include="Adapter\Data processor\IDataProcessor.cs" />
+    <Compile Include="Adapter\NetworkAdapter.cs" />
+    <Compile Include="Adapter\Network\InetworkClient.cs" />
+    <Compile Include="Adapter\Network\NetworkClient.cs" />
+    <Compile Include="Facade\NetworkFacade.cs" />
+    <Compile Include="Facade\Packet.cs" />
+    <Compile Include="Facade\Socket.cs" />
+    <Compile Include="Facade\Transmission.cs" />
     <Compile Include="Factory\NetworkFactory\NetworkFactory.cs" />
     <Compile Include="Factory\NetworkUtility\ARP.cs" />
     <Compile Include="Factory\NetworkUtility\DNS.cs" />
@@ -50,9 +59,11 @@
     <Compile Include="Factory\NetworkUtility\Ping.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingletonLecture\Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
