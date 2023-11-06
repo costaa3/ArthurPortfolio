@@ -1,13 +1,16 @@
 ﻿using DesignPatterns.Adapter.Data_processor;
 using DesignPatterns.Adapter.Network;
+using DesignPatterns.ChainOfResponsability;
 using DesignPatterns.Facade;
 using DesignPatterns.Factory.NetworkFactory;
 using DesignPatterns.Factory.NetworkUtility;
 using DesignPatterns.Factory.NetworkUtility.Interface;
+using DesignPatterns.Proxy;
 using DesignPatterns.SingletonLecture;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,11 +24,20 @@ namespace DesignPatterns
             //RunSingleton();
             //RunFactory();
             //RunFacade();
-            RunAdapter();
+            //RunAdapter();
+            //RunProxy();
+            RunChainOfResponsability();
+
             Console.ReadLine();
         }
 
-        public static void RunFactory() {
+        private static void RunProxy()
+        {
+            ISuperSecretDatabase secretDatabase = new SuperSecretDataBaseProxy("testDb", @"Password");
+            secretDatabase.DisplayDataBaseName();
+        }
+
+        private static void RunFactory() {
             NetworkFactory networkFactory = new NetworkFactory();
 
             Inetwork ping = networkFactory.GetInetwork("PING");
@@ -39,7 +51,7 @@ namespace DesignPatterns
 
         }
 
-        public static void RunSingleton() {
+        private static void RunSingleton() {
             Singleton instance = Singleton.Instance();
             Singleton instance2 = Singleton.Instance();
 
@@ -50,7 +62,7 @@ namespace DesignPatterns
             }
         }
 
-        public static void RunFacade()
+        private static void RunFacade()
         {
             NetworkFacade networkFacade = new NetworkFacade("192.168.0.0", "UDP");
             networkFacade.buildNetworkLayer();
@@ -58,7 +70,7 @@ namespace DesignPatterns
 
         }
 
-        public static void RunAdapter()
+        private static void RunAdapter()
         {
             InetworkClient networkClient = new NetworkClient();
 
@@ -71,6 +83,20 @@ namespace DesignPatterns
             NetworkAdapter networkAdapter = new NetworkAdapter(dataProcessor);
             networkAdapter.SendRequest("192.168.124.1");
 
+        }
+
+        private static void RunChainOfResponsability()
+        {
+            IChain obj1 = new SendSSH(); 
+            IChain obj2 = new SendPing(); 
+            IChain obj3 = new SendARP();
+
+
+            obj1.setNext(obj2);
+            obj2.setNext(obj3);
+
+            NetworkModel request = new NetworkModel(false, "8.8.8.8");
+            obj1.SendRequest(request);  
         }
     
     }
