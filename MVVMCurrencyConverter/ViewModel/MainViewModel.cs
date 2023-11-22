@@ -22,81 +22,15 @@ namespace MVVMCurrencyConverter.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        #region Properties
-        private decimal inputAmount;
-
-        ObservableCollection<CurrencyType> currencyTypes = new ObservableCollection<CurrencyType>(CurrencyType.GetTestData());
-
-        public decimal InputAmount
+        public MainViewModel(CurrencyConverter currencyConverter, CurrencyMaster currencyMaster)
         {
-            get => inputAmount;
-            set
-            {
-                inputAmount = value;
-                RaisePropertyChanged();
-            }
-        }
-        public CurrencyType FromCurrency
-        {
-            get => fromCurrency; set
-            {
-                fromCurrency = value;
-                RaisePropertyChanged();
-            }
-        }
-        public CurrencyType ToCurrency { get => toCurrency; set {
-                toCurrency = value;
-                RaisePropertyChanged();
-            } }
-        public decimal Result
-        {
-            get => result; set
-            {
-                result = value;
-                RaisePropertyChanged();
-            }
-        }
-        public ObservableCollection<CurrencyType> CurrencyTypes
-        {
-            get => currencyTypes; set
-            {
-                currencyTypes = value;
-                RaisePropertyChanged();
-            }
-        }
-
-        public ICommand PerformConversionCommand { get; }
-        public ICommand ClearCommand { get; }
-        private decimal result;
-        private CurrencyType fromCurrency;
-        private CurrencyType toCurrency;
-        #endregion
+            CurrencyConverter = currencyConverter;
+            CurrencyMaster = currencyMaster;
 
 
-        /// <summary>
-        /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
-        public MainViewModel()
-        {
-            PerformConversionCommand = new RelayCommand(PerformConversion);
-            ClearCommand = new RelayCommand(ClearFields);
         }
-
-        #region Methods
-        private void PerformConversion()
-        {
-            Result = CurrencyConversionTool.ConvertValue(InputAmount, FromCurrency, ToCurrency);
-        }
-
-        private void ClearFields()
-        {
-            InputAmount = 0m;
-            Result = 0m;
-            FromCurrency = CurrencyTypes[0];
-            ToCurrency = CurrencyTypes[0];
-        }
-
-        #endregion
+        public CurrencyConverter CurrencyConverter { get; }
+        public CurrencyMaster CurrencyMaster { get; }
 
     }
 }

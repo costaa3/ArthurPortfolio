@@ -1,36 +1,37 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace MVVMCurrencyConverter.ViewModel
 {
     public class CurrencyType
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public decimal Value { get; set; }
 
-        protected CurrencyType(string name, decimal value)
+        protected CurrencyType(int id,string name, decimal value)
         {
+            Id = id;
             Name = name;
             Value = value;
         }
 
-        public static IEnumerable<CurrencyType> GetTestData()
+        public static CurrencyType GetNulltData()
         {
-            List<CurrencyType> result = new List<CurrencyType>
-            {
-                CurrencyFactory("==Select==", 1m)
-            };
-            result.AddRange(Enumerable.Range(1, 200).Select(item => CurrencyFactory("value" + item, item)).ToList());
-            return result;
+            return CurrencyFactory(0, "==Select==", 1m);
+            
         } 
 
-        public static CurrencyType CurrencyFactory(string name,decimal value)
+        public static CurrencyType CurrencyFactory(int id,string name,decimal value)
         {
-            if (string.IsNullOrEmpty(name) || value.Equals(0))
+            if (string.IsNullOrEmpty(name))
             {
                 return null;
             }
-            return new CurrencyType(name,value);    
+            return new CurrencyType(id,name, value);    
         }
+
+      
     }
 }
