@@ -71,6 +71,9 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -114,18 +117,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converter\ConvertSelectionToTexst.cs" />
     <Compile Include="Converter\StringToDouble.cs" />
+    <Compile Include="Models\ApiHandling.cs" />
     <Compile Include="Models\CurrencyConversionTool.cs" />
     <Compile Include="Models\CurrencyType.cs" />
+    <Compile Include="Models\DelegatesMain.cs" />
+    <Compile Include="Models\ExchangeTypes.cs" />
+    <Compile Include="ViewModel\CurrencyTypeViewModel.cs" />
     <Compile Include="Models\DatabaseHandler].cs" />
     <Compile Include="Models\DataHolderService.cs" />
+    <Compile Include="Models\Interfaces\ICurrencyType.cs" />
     <Compile Include="Models\Interfaces\IDataHandler.cs" />
     <Compile Include="Models\Interfaces\IDataHolderService.cs" />
     <Compile Include="Models\Interfaces\IDatabaseHandler.cs" />
     <Compile Include="Models\Interfaces\IFullDataHandler.cs" />
     <Compile Include="Models\TypeConverters.cs" />
-    <Compile Include="ViewModel\CurrencyConverter.cs" />
-    <Compile Include="ViewModel\CurrencyMaster.cs" />
+    <Compile Include="ViewModel\CurrencyConverterViewModel.cs" />
+    <Compile Include="ViewModel\CurrencyMasterViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

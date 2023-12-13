@@ -22,15 +22,18 @@ namespace MVVMCurrencyConverter.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        public MainViewModel(CurrencyConverter currencyConverter, CurrencyMaster currencyMaster)
+        #region constructor
+        public MainViewModel(CurrencyConverterViewModel currencyConverter, CurrencyMasterViewModel currencyMaster)
         {
             CurrencyConverter = currencyConverter;
             CurrencyMaster = currencyMaster;
-
-
         }
-        public CurrencyConverter CurrencyConverter { get; }
-        public CurrencyMaster CurrencyMaster { get; }
+        #endregion
+
+        #region fields and properties
+        public CurrencyConverterViewModel CurrencyConverter { get; }
+        public CurrencyMasterViewModel CurrencyMaster { get; }
+        #endregion
 
     }
 }

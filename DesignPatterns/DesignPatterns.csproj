@@ -53,6 +53,8 @@
     <Compile Include="ChainOfResponsability\SendARP.cs" />
     <Compile Include="ChainOfResponsability\SendPing.cs" />
     <Compile Include="ChainOfResponsability\SendSSH.cs" />
+    <Compile Include="Decorator\DecoratorExercise.cs" />
+    <Compile Include="Decorator\INumberManipulation.cs" />
     <Compile Include="Facade\NetworkFacade.cs" />
     <Compile Include="Facade\Packet.cs" />
     <Compile Include="Facade\Socket.cs" />

@@ -1,6 +1,7 @@
 ﻿using DesignPatterns.Adapter.Data_processor;
 using DesignPatterns.Adapter.Network;
 using DesignPatterns.ChainOfResponsability;
+using DesignPatterns.Decorator;
 using DesignPatterns.Facade;
 using DesignPatterns.Factory.NetworkFactory;
 using DesignPatterns.Factory.NetworkUtility;
@@ -26,8 +27,8 @@ namespace DesignPatterns
             //RunFacade();
             //RunAdapter();
             //RunProxy();
-            RunChainOfResponsability();
-
+            //RunChainOfResponsability();
+            RunDecorator();
             Console.ReadLine();
         }
 
@@ -97,6 +98,13 @@ namespace DesignPatterns
 
             NetworkModel request = new NetworkModel(false, "8.8.8.8");
             obj1.SendRequest(request);  
+        }
+
+
+        private static void RunDecorator()
+        {
+            DecoratorExercise decoratorExercise = new DecoratorExercise();
+            decoratorExercise.Run(12);
         }
     
     }

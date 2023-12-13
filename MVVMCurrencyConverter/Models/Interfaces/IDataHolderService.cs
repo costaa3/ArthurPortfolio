@@ -5,6 +5,6 @@ namespace MVVMCurrencyConverter.Models
 {
     public interface IDataHolderService
     {
-        ObservableCollection<CurrencyType> CurrencyTypes { get; set; }
+        ObservableCollection<ICurrencyType> CurrencyTypes { get; set; }
     }
 }

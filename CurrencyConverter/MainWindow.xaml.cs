@@ -151,7 +151,7 @@ namespace CurrencyConverter
                         if (CurrencyId > 0)
                         {
 
-                            cmd = new SqlCommand("Update Currency_Master Set (Amount, CurrencyName) Values (@Amount,@CurrencyName Where Id = @Id ", con);
+                            cmd = new SqlCommand("Update Currency_Master Set (Amount, CurrencyName) Values (@Amount,@CurrencyName) Where Id = @Id ", con);
                             
 
                         }

@@ -1,4 +1,5 @@
 ﻿using MVVMCurrencyConverter.ViewModel;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -12,6 +13,7 @@ namespace MVVMCurrencyConverter.Models
 {
     public class DatabaseHandler : IDatabaseHandler
     {
+        
         private SqlConnection GetConnection()
         {
             var connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
@@ -106,7 +108,84 @@ namespace MVVMCurrencyConverter.Models
            
         }
 
+        public bool AddOrUpdate(string name, decimal value)
+        {
+            string sqlCommandStr = @"
+    IF EXISTS (SELECT * FROM CurrencyTypes WHERE Name = @name)
+    BEGIN
+        UPDATE CurrencyTypes
+        SET Value = @Value
+        WHERE Name = @name
+    END
+    ELSE
+    BEGIN
+        INSERT INTO CurrencyTypes (Name, Value)
+        VALUES (@name, @Value)
+    END";
+            try
+            {
+                using (var conn = GetConnection())
+                {
+                    conn.Open();
+                    SqlCommand sqlCommand = new SqlCommand(sqlCommandStr, conn);
+                    sqlCommand.Parameters.AddWithValue($"@Name", name);
+                    sqlCommand.Parameters.AddWithValue($"@Value", value);
+                    sqlCommand.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
 
+                return false;
+            }
+               
 
+        }
+          
+        public bool UpdateDatabaseItem(int selectedId, string name, decimal value)
+        {
+            string strSqlCommand = "UPDATE CurrencyTypes SET Name = @Name, Value = @Value WHERE Id = @Id";
+            try
+            {
+                using (var conn = GetConnection())
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(strSqlCommand, conn);
+                    cmd.Parameters.AddWithValue("@Id", selectedId);
+                    cmd.Parameters.AddWithValue("@Name", name);
+                    cmd.Parameters.AddWithValue("@Value", value);
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+        }
+
+        public bool DeleteDatabaseItem(int selectedId)
+        {
+            string strSqlcommand = "Delete From CurrencyTypes Where Id = @Id";
+            try
+            {
+                using (var conn  = GetConnection())
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(strSqlcommand, conn);
+                    cmd.Parameters.AddWithValue("@Id", selectedId);
+                    cmd.ExecuteNonQuery ();
+                    return true;
+
+;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }
