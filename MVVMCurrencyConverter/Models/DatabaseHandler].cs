@@ -99,10 +99,11 @@ namespace MVVMCurrencyConverter.Models
                 }
                 
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                
 
-                Console.WriteLine(@"Issue appending item to database");
+                Console.WriteLine(@"Issue appending item to database" + e.ToString());
                 return false;
             }
            

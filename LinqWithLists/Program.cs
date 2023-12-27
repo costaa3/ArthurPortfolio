@@ -10,9 +10,10 @@ namespace LinqWithLists
     {
         static void Main(string[] args)
         {
+    
         }
 
-        public class Student
+        public class Student    
         {
 
         }
