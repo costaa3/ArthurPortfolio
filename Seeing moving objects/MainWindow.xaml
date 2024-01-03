@@ -1,0 +1,23 @@
+﻿<Window x:Class="Seeing_moving_objects.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Seeing_moving_objects"
+        xmlns:myViewModel="clr-namespace:Seeing_moving_objects.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <myViewModel:MainViewModel/>
+    </Window.DataContext>
+    <StackPanel>
+        
+        <Slider Minimum="0" Maximum="100" Value="{Binding Scroll1Step}" Margin="20"  />
+        <Slider Minimum="0" Maximum="100"     Value="{Binding Scroll2Step}" Margin="20"  />
+        <Slider  Minimum="0" Maximum="100"  Value="{Binding Scroll3Step}" Margin="20"  />
+        <Slider Minimum="0" Maximum="100"   Value="{Binding Scroll4Step}" Margin="20"  />
+        <Button Command="{Binding Stop}" Content="STOP" />
+        
+        <Button Command="{Binding Start}" Content="Start" />
+    </StackPanel>
+</Window>
