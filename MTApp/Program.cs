@@ -67,8 +67,9 @@ namespace MTApp
             myThread.Start();
             Console.WriteLine(  "Obtaining Result");
             var res =myCompletion.Task.Result;
+            //myCompletion.Task.Wait
             Console.WriteLine("Obtained Result");
-
+            
             Console.WriteLine( "Is going to block the current method now");
             myThread.Join();
             Console.WriteLine( "Finished waiting");
@@ -92,7 +93,7 @@ namespace MTApp
 
 
 
-            var exec = new Task(() => {
+            var exec = new Task<bool>(() => {
 
                 try
                 {
@@ -101,7 +102,7 @@ namespace MTApp
                     while (true)
                     {
                         if (token.IsCancellationRequested) break ;
-                        if (sw.ElapsedMilliseconds>30000) return ;
+                        if (sw.ElapsedMilliseconds>30000) return  false;
                         Console.Write(".");
                         Thread.Sleep(1000);
                     }
@@ -111,8 +112,8 @@ namespace MTApp
 
                     Console.WriteLine("Exception triggered");
                 }
-              
-            
+
+                return true;
             });
 
             exec.GetAwaiter().OnCompleted(() =>
@@ -120,7 +121,8 @@ namespace MTApp
                 Console.WriteLine("The task has finished from the awaiter side");
             });
 
-            exec.Start();
+            exec.Wait();
+            var data = exec.Result;
             Thread.Sleep(10000);
             Console.WriteLine("fINISHED");
             //Cts.Cancel();
