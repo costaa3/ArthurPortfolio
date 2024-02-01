@@ -1,11 +1,6 @@
 ﻿using Seeing_moving_objects.View.ViewModel;
 using Seeing_moving_objects.ViewModel.Common;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -33,15 +28,16 @@ namespace Seeing_moving_objects.ViewModel
         public ICommand Stop { get; }
         public ICommand Start { get; }
 
-        private void CancelOperation(object o){
+        private void CancelOperation(object o)
+        {
             if (!cancellationTokenSource.IsCancellationRequested)
             {
 
 
                 cancellationTokenSource?.Cancel();
-            cancellationTokenSource?.Dispose();
+                cancellationTokenSource?.Dispose();
             }
-            }
+        }
         private CancellationTokenSource cancellationTokenSource;
         private CancellationToken tkn;
 
@@ -90,7 +86,7 @@ namespace Seeing_moving_objects.ViewModel
             }
         }
 
-       
+
         private void GetRandomValueAppended(Action<double> func, CancellationToken tkn)
         {
 
@@ -103,7 +99,7 @@ namespace Seeing_moving_objects.ViewModel
 
         }
 
-        private void AssignRandom(object obj=null)
+        private void AssignRandom(object obj = null)
         {
             if (cancellationTokenSource.IsCancellationRequested)
             {
@@ -113,12 +109,12 @@ namespace Seeing_moving_objects.ViewModel
             }
             if (task1 == null || task1.IsCompleted)
             {
-            task1 = Task.Run(() => GetRandomValueAppended((double val)=> Scroll1Step = val, tkn));
+                task1 = Task.Run(() => GetRandomValueAppended((double val) => Scroll1Step = val, tkn));
             }
 
             if (task2 == null || task2.IsCompleted)
             {
-            task2 = Task.Run(() => GetRandomValueAppended((double val) => Scroll2Step = val, tkn));
+                task2 = Task.Run(() => GetRandomValueAppended((double val) => Scroll2Step = val, tkn));
             }
 
             if (task3 == null || task3.IsCompleted)
@@ -129,7 +125,7 @@ namespace Seeing_moving_objects.ViewModel
 
             if (task4 == null || task4.IsCompleted)
             {
-            task4 = Task.Run(() => GetRandomValueAppended((double val) => Scroll4Step = val, tkn));
+                task4 = Task.Run(() => GetRandomValueAppended((double val) => Scroll4Step = val, tkn));
             }
 
         }

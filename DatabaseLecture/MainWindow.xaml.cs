@@ -196,7 +196,7 @@ namespace DatabaseLecture
 
         }
 
-        
+
 
         public void UpdateZooClick(object sender, RoutedEventArgs e)
         {
@@ -409,7 +409,7 @@ namespace DatabaseLecture
         {
             string userInput = MyTextBox.Text;
             string SelectedItem = listOfAllAnimals.SelectedValue?.ToString();
-            if(string.IsNullOrEmpty(userInput)|| string.IsNullOrEmpty(SelectedItem))
+            if (string.IsNullOrEmpty(userInput) || string.IsNullOrEmpty(SelectedItem))
             {
                 MessageBox.Show("Make sure an Animal is selected and the name it's correct");
                 return;

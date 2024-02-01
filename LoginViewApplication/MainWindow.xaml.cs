@@ -1,18 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace LoginViewApplication
 {
@@ -37,19 +24,21 @@ namespace LoginViewApplication
         /// <param name="e"></param>
         private void LoginOperation(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(UsernameField.Text)|| string.IsNullOrEmpty(PasswordField.Password)) {
+            if (string.IsNullOrEmpty(UsernameField.Text) || string.IsNullOrEmpty(PasswordField.Password))
+            {
                 MessageBox.Show("Invalid Fields");
                 return;
             }
             string availableUser = Environment.GetEnvironmentVariable("TestUsername");
             string correspodentPassword = Environment.GetEnvironmentVariable("TestPassword");
 
-            if (string.Equals(availableUser,UsernameField.Text, StringComparison.OrdinalIgnoreCase) &&
-               string.Equals(correspodentPassword, PasswordField.Password, StringComparison.OrdinalIgnoreCase)) {
-                MessageBox.Show("Password is correct!"); 
+            if (string.Equals(availableUser, UsernameField.Text, StringComparison.OrdinalIgnoreCase) &&
+               string.Equals(correspodentPassword, PasswordField.Password, StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show("Password is correct!");
                 return;
             }
-           
+
         }
     }
 }

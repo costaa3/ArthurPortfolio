@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.SingletonLecture
+﻿namespace DesignPatterns.SingletonLecture
 {
     public class Singleton
     {
@@ -16,13 +10,14 @@ namespace DesignPatterns.SingletonLecture
 
         protected Singleton() { }
 
-        public static Singleton Instance() {
+        public static Singleton Instance()
+        {
 
             if (instance == null)
             {
                 instance = new Singleton();
             }
-            
+
             return instance;
         }
     }

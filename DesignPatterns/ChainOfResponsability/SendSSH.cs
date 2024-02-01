@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.ChainOfResponsability
 {
@@ -11,7 +7,7 @@ namespace DesignPatterns.ChainOfResponsability
         private IChain next;
         public void SendRequest(NetworkModel request)
         {
-            
+
             if (request.Successful == false)
             {
                 Console.WriteLine("Send SSH failed. Sending PING");
@@ -27,7 +23,7 @@ namespace DesignPatterns.ChainOfResponsability
             }
             else
             {
-                Console.WriteLine( "Send SSH success ");
+                Console.WriteLine("Send SSH success ");
             }
         }
 

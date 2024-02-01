@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
-using System.CodeDom.Compiler;
-using System.Runtime.CompilerServices;
-using System.CodeDom;
-using System.Net;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace MTApp
 {
@@ -34,7 +27,7 @@ namespace MTApp
                 while (true)
                 {
                     var (a, k) = (3, 5);
-                    
+
                     if (token.IsCancellationRequested) return;
                 }
 
@@ -50,36 +43,37 @@ namespace MTApp
         {
             var myCompletion = new TaskCompletionSource<bool>();
 
-            var myThread = new Thread(()=> {
+            var myThread = new Thread(() =>
+            {
                 Stopwatch sw = Stopwatch.StartNew();
                 sw.Start();
-                while (sw.ElapsedMilliseconds<30000)
+                while (sw.ElapsedMilliseconds < 30000)
                 {
                     Console.Write(".");
                     Console.WriteLine(sw.ElapsedMilliseconds);
 
                     Thread.Sleep(1000);
-                } 
-                myCompletion.SetResult(true); 
+                }
+                myCompletion.SetResult(true);
             });
 
 
             myThread.Start();
-            Console.WriteLine(  "Obtaining Result");
-            var res =myCompletion.Task.Result;
+            Console.WriteLine("Obtaining Result");
+            var res = myCompletion.Task.Result;
             //myCompletion.Task.Wait
             Console.WriteLine("Obtained Result");
-            
-            Console.WriteLine( "Is going to block the current method now");
+
+            Console.WriteLine("Is going to block the current method now");
             myThread.Join();
-            Console.WriteLine( "Finished waiting");
+            Console.WriteLine("Finished waiting");
         }
 
         private static void UsingTaskTradSource()
         {
             var completetionSource = new TaskCompletionSource<bool>();
 
-            
+
 
         }
 
@@ -93,16 +87,17 @@ namespace MTApp
 
 
 
-            var exec = new Task<bool>(() => {
+            var exec = new Task<bool>(() =>
+            {
 
                 try
                 {
                     Stopwatch sw = Stopwatch.StartNew();
-                        sw.Start();
+                    sw.Start();
                     while (true)
                     {
-                        if (token.IsCancellationRequested) break ;
-                        if (sw.ElapsedMilliseconds>30000) return  false;
+                        if (token.IsCancellationRequested) break;
+                        if (sw.ElapsedMilliseconds > 30000) return false;
                         Console.Write(".");
                         Thread.Sleep(1000);
                     }
@@ -130,12 +125,12 @@ namespace MTApp
 
         }
 
-    private static bool showSomething(IUser user)
-    {
-            if(user is null) return false;
+        private static bool showSomething(IUser user)
+        {
+            if (user is null) return false;
             //-if (user is ( Name == "Ana",Password=="basd")) CLIENT.Password = null;
             return false;
-    }
+        }
 
 
         protected class Client : IUser
@@ -151,9 +146,11 @@ namespace MTApp
             public User() { }
             public User(string name, string password) { }
         }
-        private static void UsingThreads() {
+        private static void UsingThreads()
+        {
 
-            Thread exeq1 = new Thread(() => {
+            Thread exeq1 = new Thread(() =>
+            {
                 try
                 {
                     Stopwatch t = new Stopwatch();
@@ -175,7 +172,7 @@ namespace MTApp
                     //throw;
                 }
 
-             
+
             });
 
             exeq1.Start();
@@ -199,17 +196,18 @@ namespace MTApp
             Console.ReadLine();
         }
 
-        private static void showSomething(int value = 21,Stopwatch inst=null) {
-            Console.WriteLine( "------------------------");
+        private static void showSomething(int value = 21, Stopwatch inst = null)
+        {
+            Console.WriteLine("------------------------");
             Console.WriteLine("Hello" + value);
-            if(inst!=null)Console.WriteLine("stop:" + inst.ElapsedMilliseconds);
+            if (inst != null) Console.WriteLine("stop:" + inst.ElapsedMilliseconds);
             Console.WriteLine("------------------------");
         }
 
         private static void Getu()
         {
             Thread myEx = new Thread(() => { });
-            
+
 
         }
     }

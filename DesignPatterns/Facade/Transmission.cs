@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Facade
 {
@@ -19,7 +15,7 @@ namespace DesignPatterns.Facade
 
         public void SendTransmission()
         {
-            Console.WriteLine( "Send transmission");
+            Console.WriteLine("Send transmission");
         }
     }
 }

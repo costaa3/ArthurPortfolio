@@ -1,8 +1,4 @@
 using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
-using System;
-using System.Collections.ObjectModel;
-using System.Windows.Input;
 
 namespace MVVMCurrencyConverter.ViewModel
 {

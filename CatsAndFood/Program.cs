@@ -12,14 +12,14 @@ namespace CatsAndFood
             Console.Read();
         }
 
-      
+
 
 
         public static int NotHungryCats(string kitchen)
         {
 
-             string catL = "O~";
-             string catR = "~O";
+            string catL = "O~";
+            string catR = "~O";
 
             if (string.IsNullOrEmpty(kitchen))
             {
@@ -29,7 +29,7 @@ namespace CatsAndFood
             List<int> LMovingIndexes = new List<int>();
             List<int> RMovingIndexes = new List<int>();
 
-            for (int i = 0; i < kitchen.Length - 1; i ++)
+            for (int i = 0; i < kitchen.Length - 1; i++)
             {
                 string subStringToUse = kitchen.Substring(i, 2);
                 if (subStringToUse.Equals(catR, StringComparison.OrdinalIgnoreCase))

@@ -1,12 +1,6 @@
 ﻿using Autofac;
 using MVVMCurrencyConverter.Models;
 using MVVMCurrencyConverter.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace MVVMCurrencyConverter
@@ -29,12 +23,12 @@ namespace MVVMCurrencyConverter
             builder.RegisterType<MainViewModel>().AsSelf().SingleInstance(); ;
             builder.RegisterType<DatabaseHandler>().As<IDatabaseHandler>().SingleInstance();
             builder.RegisterType<DataHolderService>().As<IDataHandler>().SingleInstance();
-            var container  = builder.Build();
+            var container = builder.Build();
 
-           
+
             var dbHandler = container.Resolve<IDatabaseHandler>();
-            
-             var result = await apiHandling.GetData("https://openexchangerates.org/api/latest.json?app_id=df6e40d64da8455cb5442e04f2de846d");
+
+            var result = await apiHandling.GetData("https://openexchangerates.org/api/latest.json?app_id=df6e40d64da8455cb5442e04f2de846d");
             foreach (var item in result.Rates)
             {
                 dbHandler.AddOrUpdate(item.Key, item.Value);

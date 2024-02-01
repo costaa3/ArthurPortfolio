@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MVVMCurrencyConverter.ViewModel
+﻿namespace MVVMCurrencyConverter.ViewModel
 {
     public static class TypeConverters
     {

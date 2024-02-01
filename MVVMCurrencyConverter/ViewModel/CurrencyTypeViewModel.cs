@@ -1,22 +1,17 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using MVVMCurrencyConverter.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace MVVMCurrencyConverter.Models
 {
-    public class CurrencyTypeViewModel :ObservableObject, ICurrencyType
+    public class CurrencyTypeViewModel : ObservableObject, ICurrencyType
     {
 
         #region Properties and fields
 
         #region Properties
-      
+
 
         public int Id
         {

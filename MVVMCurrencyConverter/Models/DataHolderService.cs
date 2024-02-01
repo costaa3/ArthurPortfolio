@@ -1,13 +1,6 @@
-﻿using GalaSoft.MvvmLight;
-using MVVMCurrencyConverter.ViewModel;
-using System;
-using System.Collections.Generic;
+﻿using MVVMCurrencyConverter.ViewModel;
 using System.Collections.ObjectModel;
-using System.Configuration;
 using System.Linq;
-using MVVMCurrencyConverter;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MVVMCurrencyConverter.Models
 {
@@ -23,7 +16,7 @@ namespace MVVMCurrencyConverter.Models
             UpdateData();
         }
 
-    
+
 
         private event UpdateDataOnSubscribed updateDataOnSubscribedEvent;
         private event UpdateLinkSelectionOnSubscribed UpdateLinkSelectionEvent;
@@ -36,10 +29,10 @@ namespace MVVMCurrencyConverter.Models
 
         public void UpdataDbItem(string name, decimal value)
         {
-            databaseHandler.UpdateDatabaseItem(selectedCurrencyType.Id, name,value);
+            databaseHandler.UpdateDatabaseItem(selectedCurrencyType.Id, name, value);
             UpdateData();
             CurrencyTypeSelected = null;
-            
+
         }
 
         public void UpdateData()
@@ -52,7 +45,7 @@ namespace MVVMCurrencyConverter.Models
             {
                 CurrencyTypes.Add(currencyType.TuppleToCurrency());
             }
-            updateDataOnSubscribedEvent?.Invoke(CurrencyTypes.Select(it=>new CurrencyTypeViewModel(it,this)));
+            updateDataOnSubscribedEvent?.Invoke(CurrencyTypes.Select(it => new CurrencyTypeViewModel(it, this)));
         }
 
         public void AppendToDatabase(string currencyName, decimal CurrencyValue)
@@ -64,9 +57,9 @@ namespace MVVMCurrencyConverter.Models
         public void SetCurrencyBeingEditted(ICurrencyType currencyType)
         {
             CurrencyTypeSelected = currencyType;
-            
+
         }
-                                                                                                                            
+
         public void SubscribeToLinkSelection(UpdateLinkSelectionOnSubscribed UpdateLinkSelectiondelegate)
         {
             UpdateLinkSelectionEvent += UpdateLinkSelectiondelegate;

@@ -1,19 +1,13 @@
-﻿using MVVMCurrencyConverter.ViewModel;
-using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace MVVMCurrencyConverter.Models
 {
     public class DatabaseHandler : IDatabaseHandler
     {
-        
+
         private SqlConnection GetConnection()
         {
             var connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
@@ -97,16 +91,16 @@ namespace MVVMCurrencyConverter.Models
                     cmd.ExecuteNonQuery();
                     return true;
                 }
-                
+
             }
             catch (Exception e)
             {
-                
+
 
                 Console.WriteLine(@"Issue appending item to database" + e.ToString());
                 return false;
             }
-           
+
         }
 
         public bool AddOrUpdate(string name, decimal value)
@@ -140,10 +134,10 @@ namespace MVVMCurrencyConverter.Models
 
                 return false;
             }
-               
+
 
         }
-          
+
         public bool UpdateDatabaseItem(int selectedId, string name, decimal value)
         {
             string strSqlCommand = "UPDATE CurrencyTypes SET Name = @Name, Value = @Value WHERE Id = @Id";
@@ -172,15 +166,15 @@ namespace MVVMCurrencyConverter.Models
             string strSqlcommand = "Delete From CurrencyTypes Where Id = @Id";
             try
             {
-                using (var conn  = GetConnection())
+                using (var conn = GetConnection())
                 {
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(strSqlcommand, conn);
                     cmd.Parameters.AddWithValue("@Id", selectedId);
-                    cmd.ExecuteNonQuery ();
+                    cmd.ExecuteNonQuery();
                     return true;
 
-;
+                    ;
                 }
             }
             catch (Exception)

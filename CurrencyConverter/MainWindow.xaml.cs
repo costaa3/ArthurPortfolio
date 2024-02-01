@@ -1,22 +1,10 @@
-﻿using Microsoft.Win32.SafeHandles;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CurrencyConverter
 {
@@ -25,7 +13,7 @@ namespace CurrencyConverter
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter ada = new SqlDataAdapter();
 
@@ -35,9 +23,9 @@ namespace CurrencyConverter
         {
             string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             var conn = new SqlConnection(connectionString); // Open the connection
-           
+
             return new SqlConnection(connectionString);
-           
+
 
         }
 
@@ -78,7 +66,7 @@ namespace CurrencyConverter
                     ToCurrencyComboBox.ItemsSource = dt.DefaultView;
                 }
             }
-        
+
             //DataTable dataTable = new DataTable();
             //dataTable.Columns.Add("Text");
             //dataTable.Columns.Add("Value");
@@ -106,7 +94,7 @@ namespace CurrencyConverter
 
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            if (!int.TryParse(e.Text ,out int n))
+            if (!int.TryParse(e.Text, out int n))
             {
                 e.Handled = true;
                 return;
@@ -123,7 +111,7 @@ namespace CurrencyConverter
             else
             {
                 double value = double.Parse(UserInputValue.Text);
-                double result= value * (double.Parse(CurrencySelectionComboBox.SelectedValue.ToString())) / double.Parse(ToCurrencyComboBox.SelectedValue.ToString());
+                double result = value * (double.Parse(CurrencySelectionComboBox.SelectedValue.ToString())) / double.Parse(ToCurrencyComboBox.SelectedValue.ToString());
                 ResultLabel.Content = result.ToString("N3");
             }
         }
@@ -135,7 +123,7 @@ namespace CurrencyConverter
                 MessageBox.Show("Insert an amount");
                 EnterAmountInput.Focus();
             }
-            else if (string.IsNullOrEmpty(CurrencyNameSelection.Text) )
+            else if (string.IsNullOrEmpty(CurrencyNameSelection.Text))
             {
                 MessageBox.Show("Select the currency");
                 EnterAmountInput.Focus();
@@ -152,7 +140,7 @@ namespace CurrencyConverter
                         {
 
                             cmd = new SqlCommand("Update Currency_Master Set (Amount, CurrencyName) Values (@Amount,@CurrencyName) Where Id = @Id ", con);
-                            
+
 
                         }
                         else
@@ -185,7 +173,7 @@ namespace CurrencyConverter
             DataGrid dtg = sender as DataGrid;
             DataRowView rowSelection = dtg.CurrentItem as DataRowView;
             string selectedId = rowSelection["Id"].ToString();
-            if (dtg.SelectedCells.Count==0)
+            if (dtg.SelectedCells.Count == 0)
             {
                 return;
             }
@@ -202,9 +190,9 @@ namespace CurrencyConverter
                 default:
                     return;
 
-              
+
             }
-            using(var con = EstablishConnection())
+            using (var con = EstablishConnection())
             {
                 con.Open();
                 cmd = new SqlCommand(sqlCommand, con);
@@ -217,10 +205,11 @@ namespace CurrencyConverter
 
         private void UpdateTable()
         {
-            using(var con =  EstablishConnection()) {
+            using (var con = EstablishConnection())
+            {
                 con.Open();
                 DataTable myData = new DataTable();
-                cmd = new SqlCommand("Select * from Currency_Master",con);
+                cmd = new SqlCommand("Select * from Currency_Master", con);
                 cmd.CommandType = CommandType.Text;
                 ada = new SqlDataAdapter(cmd);
                 ada.Fill(myData);
@@ -244,7 +233,7 @@ namespace CurrencyConverter
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             EnterAmountInput.Text = string.Empty;
-            CurrencyNameSelection.Text= string.Empty;
+            CurrencyNameSelection.Text = string.Empty;
             CurrenciesTable.SelectedIndex = -1;
         }
     }

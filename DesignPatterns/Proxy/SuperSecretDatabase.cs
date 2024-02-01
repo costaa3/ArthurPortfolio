@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Proxy
 {
-    internal class SuperSecretDatabase :ISuperSecretDatabase
+    internal class SuperSecretDatabase : ISuperSecretDatabase
     {
 
         private string _databaseName;
@@ -19,7 +14,7 @@ namespace DesignPatterns.Proxy
 
         public void DisplayDataBaseName()
         {
-            Console.WriteLine( $"The database name is {_databaseName}" );
+            Console.WriteLine($"The database name is {_databaseName}");
         }
     }
 }

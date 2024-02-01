@@ -1,9 +1,4 @@
 ﻿using DesignPatterns.Adapter.Network;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Adapter.Data_processor
 {

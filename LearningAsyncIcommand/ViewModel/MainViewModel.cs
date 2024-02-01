@@ -1,16 +1,13 @@
 ﻿using LearningAsyncIcommand.ViewModel.Common;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace LearningAsyncIcommand.ViewModel
 {
-    internal class MainViewModel:BaseViewModel,IDisposable
+    internal class MainViewModel : BaseViewModel, IDisposable
     {
 
         private CancellationTokenSource _cancellationTokenSource;
@@ -24,11 +21,12 @@ namespace LearningAsyncIcommand.ViewModel
 
         private void InitializeCancelToken()
         {
-            if (_cancellationTokenSource == null || _cancellationTokenSource.IsCancellationRequested) {
+            if (_cancellationTokenSource == null || _cancellationTokenSource.IsCancellationRequested)
+            {
                 _cancellationTokenSource = new CancellationTokenSource();
                 _cancellationToken = _cancellationTokenSource.Token;
             }
-            
+
         }
 
         private int valueToShow;
@@ -42,8 +40,8 @@ namespace LearningAsyncIcommand.ViewModel
             }
         }
 
-        public ICommand RunCommand { get;  }
-        public ICommand StopCommand { get;  }
+        public ICommand RunCommand { get; }
+        public ICommand StopCommand { get; }
 
         async Task SetRandomNumbers()
         {
@@ -60,9 +58,9 @@ namespace LearningAsyncIcommand.ViewModel
             catch (Exception)
             {
 
-                Debugger.Log(0,"Finished task","Task has been stoped");
+                Debugger.Log(0, "Finished task", "Task has been stoped");
             }
-                
+
         }
         async void StopRandomizer()
         {

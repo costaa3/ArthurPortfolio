@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.ChainOfResponsability
 {
@@ -11,18 +7,18 @@ namespace DesignPatterns.ChainOfResponsability
         private IChain next;
         public void SendRequest(NetworkModel request)
         {
-            
+
             if (request.Successful == false)
             {
                 Console.WriteLine("Send ARP failed.");
-                if(next != null)
+                if (next != null)
                 {
                     next.SendRequest(request);
 
                 }
                 else
                 {
-                    Console.WriteLine(  "Transmission failed, terminating");
+                    Console.WriteLine("Transmission failed, terminating");
                 }
             }
             else

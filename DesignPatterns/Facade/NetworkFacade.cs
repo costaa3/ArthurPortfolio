@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Facade
+﻿namespace DesignPatterns.Facade
 {
     internal class NetworkFacade
     {
         private Packet packet;
         private Socket socket;
-        private Transmission  transmission ;
+        private Transmission transmission;
 
-        public NetworkFacade(string ip,string protocol)
+        public NetworkFacade(string ip, string protocol)
         {
             this.packet = new Packet(ip);
             this.socket = new Socket(protocol);
@@ -22,7 +16,7 @@ namespace DesignPatterns.Facade
         public void buildNetworkLayer()
         {
             packet.PacketBuilt();
-            socket.BuildSocket(); 
+            socket.BuildSocket();
         }
 
         public void sendPacketOverNetwor()

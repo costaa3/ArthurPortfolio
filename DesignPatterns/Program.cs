@@ -4,16 +4,10 @@ using DesignPatterns.ChainOfResponsability;
 using DesignPatterns.Decorator;
 using DesignPatterns.Facade;
 using DesignPatterns.Factory.NetworkFactory;
-using DesignPatterns.Factory.NetworkUtility;
 using DesignPatterns.Factory.NetworkUtility.Interface;
 using DesignPatterns.Proxy;
 using DesignPatterns.SingletonLecture;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace DesignPatterns
@@ -38,7 +32,8 @@ namespace DesignPatterns
             secretDatabase.DisplayDataBaseName();
         }
 
-        private static void RunFactory() {
+        private static void RunFactory()
+        {
             NetworkFactory networkFactory = new NetworkFactory();
 
             Inetwork ping = networkFactory.GetInetwork("PING");
@@ -52,11 +47,12 @@ namespace DesignPatterns
 
         }
 
-        private static void RunSingleton() {
+        private static void RunSingleton()
+        {
             Singleton instance = Singleton.Instance();
             Singleton instance2 = Singleton.Instance();
 
-            if (instance==instance2)
+            if (instance == instance2)
             {
                 Console.WriteLine("Same memory address");
 
@@ -88,8 +84,8 @@ namespace DesignPatterns
 
         private static void RunChainOfResponsability()
         {
-            IChain obj1 = new SendSSH(); 
-            IChain obj2 = new SendPing(); 
+            IChain obj1 = new SendSSH();
+            IChain obj2 = new SendPing();
             IChain obj3 = new SendARP();
 
 
@@ -97,7 +93,7 @@ namespace DesignPatterns
             obj2.setNext(obj3);
 
             NetworkModel request = new NetworkModel(false, "8.8.8.8");
-            obj1.SendRequest(request);  
+            obj1.SendRequest(request);
         }
 
 
@@ -106,6 +102,6 @@ namespace DesignPatterns
             DecoratorExercise decoratorExercise = new DecoratorExercise();
             decoratorExercise.Run(12);
         }
-    
+
     }
 }

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Data;
 
 namespace MVVMCurrencyConverter.Converter
@@ -19,7 +15,7 @@ namespace MVVMCurrencyConverter.Converter
         {
             decimal d;
             return decimal.TryParse(value.ToString(), out d) ? d : 0m;
-            
+
         }
     }
 }
