@@ -11,7 +11,7 @@
     <Type Name="University">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Association Name="University_Student1" Member="Students" ThisKey="Id" OtherKey="UniversityId" Type="Student" />
+      <Association Name="University_Student" Member="Students" ThisKey="Id" OtherKey="UniversityId" Type="Student" />
     </Type>
   </Table>
   <Table Name="dbo.Student" Member="Students">
@@ -21,7 +21,7 @@
       <Column Name="Gender" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="UniversityId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="Student_StudentLecture" Member="StudentLectures" ThisKey="Id" OtherKey="StudentId" Type="StudentLecture" />
-      <Association Name="University_Student1" Member="University" ThisKey="UniversityId" OtherKey="Id" Type="University" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="University_Student" Member="University" ThisKey="UniversityId" OtherKey="Id" Type="University" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.StudentLecture" Member="StudentLectures">

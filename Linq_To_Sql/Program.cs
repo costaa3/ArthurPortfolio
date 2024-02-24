@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Data.Linq;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 
 namespace Linq_To_Sql
 {
@@ -27,14 +30,20 @@ namespace Linq_To_Sql
             //AddStudents();
             //ShowAllStudents();
             //AddLectures(true);
-            AppendStudentLectureAssociation();
+            //AppendStudentLectureAssociation();
+            //ShowUniversitiesWithPortugueseClasses();
+            //ShowUniversityWithTransGenderStudents();
+
+            UpdateStudentInfo();
+            deleteStudent();
+
             Console.ReadLine();
         }
 
         public static void displayAllUniversities()
         {
             var res = dataContext.Universities.ToList();
-
+            Mutex mutex = new Mutex();
             foreach (var univer in res)
             {
                 Console.WriteLine( $"Universiry id:{univer.Id} | University Name {univer.Name}");
@@ -71,7 +80,7 @@ namespace Linq_To_Sql
             foreach (Student student in dataContext.Students)
             {
 
-                Console.WriteLine($"{student.Name} is a student at {student.University.Name} and he is {student.Gender}");
+                Console.WriteLine($"{student.Name} is a uni at {student.University.Name} and he is {student.Gender}");
 
             }
             
@@ -164,5 +173,44 @@ namespace Linq_To_Sql
             }
 
         }
+
+
+        public static void ShowUniversitiesWithPortugueseClasses()
+        {
+            //var res = from StudentLecture lecture in dataContext.StudentLectures join 
+            var res = from lecture in dataContext.Lectures join studentLecture in dataContext.StudentLectures  on lecture equals studentLecture.Lecture where lecture.Name.Equals("Portuguese") select studentLecture.Student.University;
+
+            foreach (University item in res)
+            {
+                Console.WriteLine($"University name: {item.Name}");
+            }
+        }
+
+        public static void ShowUniversityWithTransGenderStudents()
+        {
+            var uniWithTranganders = from uni in dataContext.Universities join student in dataContext.Students on uni equals student.University where student.Gender== "Trans-Gender" select uni;
+
+            foreach (University uni in uniWithTranganders)
+            {
+                Console.WriteLine(uni.Name);
+            }
+        }
+
+        public static void UpdateStudentInfo()
+        {
+
+            var Jame = dataContext.Students.FirstOrDefault(st => st.Name.Equals("Jame"));
+            Jame.Name = "james";
+            dataContext.SubmitChanges();
+        }
+
+        public static void deleteStudent()
+        {
+            var Toni = dataContext.Students.FirstOrDefault(st => st.Name.Equals("Toni"));
+            
+            dataContext.Students.DeleteOnSubmit(Toni);
+        }
     }
+
+
 }

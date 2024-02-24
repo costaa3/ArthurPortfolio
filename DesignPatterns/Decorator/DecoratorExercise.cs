@@ -9,7 +9,8 @@ namespace DesignPatterns.Decorator
         public void Run(int value)
         {
             _MultiplyBy.CalculateValue(value);
-        }
+        } 
+
     }
 
     public class ShowValue : INumberManipulation

@@ -58,8 +58,7 @@ namespace LinqWithLists
             public void MaleStudents()
             {
                 IEnumerable<Student> maleStudents = from student in students where student.Gender == "Male" select student;
-                Console.WriteLine("Male students:");
-                students.Add(new Student() { Id = 3, Name = "John", Gender = "Male", Age = 17, UniversityId = 1 });
+                 students.Add(new Student() { Id = 3, Name = "John", Gender = "Male", Age = 17, UniversityId = 1 });
                 foreach (Student student in maleStudents)
                 {
                     student.Print();

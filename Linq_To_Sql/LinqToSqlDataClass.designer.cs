@@ -289,7 +289,7 @@ namespace Linq_To_Sql
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="University_Student1", Storage="_Students", ThisKey="Id", OtherKey="UniversityId")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="University_Student", Storage="_Students", ThisKey="Id", OtherKey="UniversityId")]
 		public EntitySet<Student> Students
 		{
 			get
@@ -471,7 +471,7 @@ namespace Linq_To_Sql
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="University_Student1", Storage="_University", ThisKey="UniversityId", OtherKey="Id", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="University_Student", Storage="_University", ThisKey="UniversityId", OtherKey="Id", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public University University
 		{
 			get

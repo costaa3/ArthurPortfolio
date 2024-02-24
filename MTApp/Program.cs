@@ -55,7 +55,8 @@ namespace MTApp
                     Thread.Sleep(1000);
                 }
                 myCompletion.SetResult(true);
-            });
+            }
+            );
 
 
             myThread.Start();
