@@ -13,7 +13,7 @@ namespace MySimpleCalculator.Controllers
         public int Get(int left,int right)
         {
             Calculator calculator = new Calculator();
-            return calculator.addNumbers(left, right);
-        }
+            return calculator.Sum(left, right);
+        } 
     }
 }
