@@ -10,10 +10,10 @@ namespace MySimpleCalculator.Controllers
 
 
         [HttpGet("Add/{left}/{right}")]
-        public int Get(int left,int right)
+        public int Get(int left, int right)
         {
             Calculator calculator = new Calculator();
             return calculator.Sum(left, right);
-        } 
+        }
     }
 }

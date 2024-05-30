@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
 using System.Data;
-using System.Data.Linq;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 
 namespace Linq_To_Sql
@@ -17,7 +13,7 @@ namespace Linq_To_Sql
 
         static void Main(string[] args)
         {
-            
+
             string DbConnectionString = ConfigurationManager.ConnectionStrings["Linq_To_Sql.Properties.Settings.masterConnectionString"].ConnectionString;
 
             dataContext = new LinqToSqlDataClassDataContext(DbConnectionString);
@@ -46,7 +42,7 @@ namespace Linq_To_Sql
             Mutex mutex = new Mutex();
             foreach (var univer in res)
             {
-                Console.WriteLine( $"Universiry id:{univer.Id} | University Name {univer.Name}");
+                Console.WriteLine($"Universiry id:{univer.Id} | University Name {univer.Name}");
 
             }
         }
@@ -60,15 +56,16 @@ namespace Linq_To_Sql
 
         public static void AddUniversity(string university)
         {
-            University university1 = new University() { 
+            University university1 = new University()
+            {
                 Name = university,
             };
 
-            dataContext.Universities.InsertOnSubmit(university1 );
+            dataContext.Universities.InsertOnSubmit(university1);
             dataContext.SubmitChanges();
         }
 
-        public static void AddStudent(string studentName,University university)
+        public static void AddStudent(string studentName, University university)
         {
 
             Student student1 = new Student() { Name = "Carla", Gender = "Female", UniversityId = university.Id };
@@ -83,7 +80,7 @@ namespace Linq_To_Sql
                 Console.WriteLine($"{student.Name} is a uni at {student.University.Name} and he is {student.Gender}");
 
             }
-            
+
 
         }
 
@@ -133,17 +130,17 @@ namespace Linq_To_Sql
 
         public static void AppendStudentLectureAssociation()
         {
-            Student Carla = dataContext.Students.FirstOrDefault(s=> s.Name.Equals("Carla"));
-            Student Toni = dataContext.Students.FirstOrDefault(s=> s.Name.Equals("Toni"));
-            Student Leyle = dataContext.Students.FirstOrDefault(s=> s.Name.Equals("Leyle"));
-            Student Jame = dataContext.Students.FirstOrDefault(s=> s.Name.Equals("Jame"));
+            Student Carla = dataContext.Students.FirstOrDefault(s => s.Name.Equals("Carla"));
+            Student Toni = dataContext.Students.FirstOrDefault(s => s.Name.Equals("Toni"));
+            Student Leyle = dataContext.Students.FirstOrDefault(s => s.Name.Equals("Leyle"));
+            Student Jame = dataContext.Students.FirstOrDefault(s => s.Name.Equals("Jame"));
 
             List<StudentLecture> studentLectures = new List<StudentLecture>();
-            Lecture Math = dataContext.Lectures.FirstOrDefault(n=>n.Name.Equals("Math"));
-            Lecture Portuguese = dataContext.Lectures.FirstOrDefault(n=>n.Name.Equals("Portuguese"));
-            Lecture English = dataContext.Lectures.FirstOrDefault(n=>n.Name.Equals("English"));
-            Lecture Physics = dataContext.Lectures.FirstOrDefault(n=>n.Name.Equals("Physics"));
-            Lecture ComputerEngineering = dataContext.Lectures.FirstOrDefault(n=>n.Name.Equals("Computer engineering"));
+            Lecture Math = dataContext.Lectures.FirstOrDefault(n => n.Name.Equals("Math"));
+            Lecture Portuguese = dataContext.Lectures.FirstOrDefault(n => n.Name.Equals("Portuguese"));
+            Lecture English = dataContext.Lectures.FirstOrDefault(n => n.Name.Equals("English"));
+            Lecture Physics = dataContext.Lectures.FirstOrDefault(n => n.Name.Equals("Physics"));
+            Lecture ComputerEngineering = dataContext.Lectures.FirstOrDefault(n => n.Name.Equals("Computer engineering"));
 
             studentLectures.Add(new StudentLecture() { Lecture = Math, Student = Carla });
             studentLectures.Add(new StudentLecture() { Lecture = Portuguese, Student = Carla });
@@ -178,7 +175,7 @@ namespace Linq_To_Sql
         public static void ShowUniversitiesWithPortugueseClasses()
         {
             //var res = from StudentLecture lecture in dataContext.StudentLectures join 
-            var res = from lecture in dataContext.Lectures join studentLecture in dataContext.StudentLectures  on lecture equals studentLecture.Lecture where lecture.Name.Equals("Portuguese") select studentLecture.Student.University;
+            var res = from lecture in dataContext.Lectures join studentLecture in dataContext.StudentLectures on lecture equals studentLecture.Lecture where lecture.Name.Equals("Portuguese") select studentLecture.Student.University;
 
             foreach (University item in res)
             {
@@ -188,7 +185,7 @@ namespace Linq_To_Sql
 
         public static void ShowUniversityWithTransGenderStudents()
         {
-            var uniWithTranganders = from uni in dataContext.Universities join student in dataContext.Students on uni equals student.University where student.Gender== "Trans-Gender" select uni;
+            var uniWithTranganders = from uni in dataContext.Universities join student in dataContext.Students on uni equals student.University where student.Gender == "Trans-Gender" select uni;
 
             foreach (University uni in uniWithTranganders)
             {
@@ -207,7 +204,7 @@ namespace Linq_To_Sql
         public static void deleteStudent()
         {
             var Toni = dataContext.Students.FirstOrDefault(st => st.Name.Equals("Toni"));
-            
+
             dataContext.Students.DeleteOnSubmit(Toni);
         }
     }

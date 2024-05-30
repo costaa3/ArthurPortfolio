@@ -1,14 +1,18 @@
 ﻿namespace Domain
 {
-    public class Booking 
+    public class Booking
     {
-        public string email { get; set; }
+        public string PassengerEmail { get; set; }
         public int bookedSeats { get; set; }
-
+        [Obsolete("ef core")]
+        public Booking()
+        {
+            
+        }
 
         public Booking(string email, int bookedSeats)
         {
-            this.email = email;
+            this.PassengerEmail = email;
             this.bookedSeats = bookedSeats;
         }
     }

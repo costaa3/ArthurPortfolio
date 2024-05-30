@@ -5,6 +5,13 @@ namespace Domain
     {
         private readonly int seatcapacity;
         public List<Booking> Bookings = new List<Booking>();
+        public Guid Id;
+
+        [Obsolete("Needed by EF")]
+        public Flight()
+        {
+
+        }
 
         public int SeatsAvailable { get; set; }
 
@@ -23,11 +30,17 @@ namespace Domain
 
         public object? Cancel(string email, int numberOfSeats)
         {
-            var BookingsMatch = Bookings.Where(it => it.email.Equals(email));
-            if(!BookingsMatch.Any()) {
+            var BookingsMatch = Bookings.Where(it => it.PassengerEmail.Equals(email)).ToList();
+            if (!BookingsMatch.Any())
+            {
                 return new BookingNotFoundError();
             }
             SeatsAvailable += numberOfSeats;
+            foreach (var item in BookingsMatch)
+            {
+                Bookings.Remove(item);
+
+            }
             return null;
         }
     }

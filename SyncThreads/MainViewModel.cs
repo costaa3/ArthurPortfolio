@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using CommunityToolkit;
-using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
 
 namespace SyncThreads
 {
-    
-    public class MainViewModel :ObservableObject
+
+    public class MainViewModel : ObservableObject
     {
         Mutex mtx = new Mutex(false);
         SemaphoreSlim Semaphore = new SemaphoreSlim(1, 1);
@@ -48,11 +43,12 @@ namespace SyncThreads
 
         public ICommand Op1 { get; }
         public ICommand Op2 { get; }
-        public  ICommand Op3 { get; }
+        public ICommand Op3 { get; }
 
 
 
-        private async Task sHOWOS(int item) {
+        private async Task sHOWOS(int item)
+        {
             //Monitor.Enter(obj);
             mtx.WaitOne();
             //await Semaphore.WaitAsync();
@@ -62,7 +58,7 @@ namespace SyncThreads
 
 
                 WriteLoggText($"=>>>>>>Starting op {item} isntance {instanceNumber}");
-                
+
                 //WriteLoggText("this is op 1");
                 await Task.Delay(5000 * item);
                 //Thread.Sleep(5000 * item);
@@ -88,12 +84,13 @@ namespace SyncThreads
             //mtx.WaitOne();
             //await Semaphore.WaitAsync();
             Random rnd = new Random();
-            while (stopwatch.ElapsedMilliseconds<30000)
+            while (stopwatch.ElapsedMilliseconds < 30000)
             {
                 var randValue = rnd.Next(255);
-                if (!keyValuePairs.ContainsKey(randValue)) { 
-                
-                keyValuePairs.Add(randValue, randValue);
+                if (!keyValuePairs.ContainsKey(randValue))
+                {
+
+                    keyValuePairs.Add(randValue, randValue);
                 }
 
 
@@ -131,8 +128,9 @@ namespace SyncThreads
 
         }
 
-        private async Task Showdd() { 
-        WriteLoggText($" hey there ");
+        private async Task Showdd()
+        {
+            WriteLoggText($" hey there ");
             await Task.Delay(10000);
             WriteLoggText($" finished  hey there ");
 
@@ -162,7 +160,7 @@ namespace SyncThreads
         private void op1CmdSyncop1CmdSync()
         {
 
-            Task.Run(()=> ShowData(1)) ;
+            Task.Run(() => ShowData(1));
         }
 
         private void op2CmdSync()

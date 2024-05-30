@@ -3,28 +3,128 @@
   "WorkspaceRootPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\unittestinglecture\\unittestinglecturetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|solutionrelative:unittestinglecture\\unittestinglecturetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05DD09C2-7C7B-41BC-B8CF-286C408C1335}|ReverseNumberTesting\\ReverseNumberTesting.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\reversenumbertesting\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05DD09C2-7C7B-41BC-B8CF-286C408C1335}|ReverseNumberTesting\\ReverseNumberTesting.csproj|solutionrelative:reversenumbertesting\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\application\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|solutionrelative:application\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\domain\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|solutionrelative:domain\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3B471362-50A9-4EF6-8A42-14E7C2CF8CDE}|Application.tests\\Application.tests.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\application.tests\\flightapplicationspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B471362-50A9-4EF6-8A42-14E7C2CF8CDE}|Application.tests\\Application.tests.csproj|solutionrelative:application.tests\\flightapplicationspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\application\\cancelbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|solutionrelative:application\\cancelbookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ADB5E62-08BD-4948-B5B4-5880D44D6F03}|Data\\Data.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\data\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ADB5E62-08BD-4948-B5B4-5880D44D6F03}|Data\\Data.csproj|solutionrelative:data\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\application\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|solutionrelative:application\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\domain\\overbookingerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|solutionrelative:domain\\overbookingerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ADB5E62-08BD-4948-B5B4-5880D44D6F03}|Data\\Data.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4ADB5E62-08BD-4948-B5B4-5880D44D6F03}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBCB11C3-9A2A-4E4F-A113-17F1C6A9BFAD}|SyncThreads\\SyncThreads.csproj|C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\syncthreads\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBCB11C3-9A2A-4E4F-A113-17F1C6A9BFAD}|SyncThreads\\SyncThreads.csproj|solutionrelative:syncthreads\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\unittestinglecture\\unittestinglecture.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|solutionrelative:unittestinglecture\\unittestinglecture.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\unittestinglecture\\unittestinglecture.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|solutionrelative:unittestinglecture\\unittestinglecture.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5352684F-62F9-43F1-B695-1CC0ABD0846E}|SimpleCalculatorApp\\SimpleCalculatorApp.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\simplecalculatorapp\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5352684F-62F9-43F1-B695-1CC0ABD0846E}|SimpleCalculatorApp\\SimpleCalculatorApp.csproj|solutionrelative:simplecalculatorapp\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\domain\\domain.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B471362-50A9-4EF6-8A42-14E7C2CF8CDE}|Application.tests\\Application.tests.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\application.tests\\application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3B471362-50A9-4EF6-8A42-14E7C2CF8CDE}|Application.tests\\Application.tests.csproj|solutionrelative:application.tests\\application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\application\\bookingrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|solutionrelative:application\\bookingrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\domain\\bookingnotfounderror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|solutionrelative:domain\\bookingnotfounderror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\domain\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|solutionrelative:domain\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ADB5E62-08BD-4948-B5B4-5880D44D6F03}|Data\\Data.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\data\\data.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{4ADB5E62-08BD-4948-B5B4-5880D44D6F03}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B471362-50A9-4EF6-8A42-14E7C2CF8CDE}|Application.tests\\Application.tests.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\application.tests\\application.tests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{3B471362-50A9-4EF6-8A42-14E7C2CF8CDE}|Application.tests\\Application.tests.csproj|solutionrelative:application.tests\\application.tests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\application\\application.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{186FE9EF-B291-4DB9-A1E5-14340FE4BC0A}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\unittestinglecture\\unittestinglecturetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|solutionrelative:unittestinglecture\\unittestinglecturetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\mysimplecalculator\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|solutionrelative:mysimplecalculator\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F29B81E2-E79D-4B7E-BEB1-8110207E5439}|Domain.tests\\Domain.tests.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\domain.tests\\domain.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F29B81E2-E79D-4B7E-BEB1-8110207E5439}|Domain.tests\\Domain.tests.csproj|solutionrelative:domain.tests\\domain.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\mysimplecalculator\\mysimplecalculator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|solutionrelative:mysimplecalculator\\mysimplecalculator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5352684F-62F9-43F1-B695-1CC0ABD0846E}|SimpleCalculatorApp\\SimpleCalculatorApp.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\simplecalculatorapp\\simplecalculatorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5352684F-62F9-43F1-B695-1CC0ABD0846E}|SimpleCalculatorApp\\SimpleCalculatorApp.csproj|solutionrelative:simplecalculatorapp\\simplecalculatorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05DD09C2-7C7B-41BC-B8CF-286C408C1335}|ReverseNumberTesting\\ReverseNumberTesting.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\reversenumbertesting\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05DD09C2-7C7B-41BC-B8CF-286C408C1335}|ReverseNumberTesting\\ReverseNumberTesting.csproj|solutionrelative:reversenumbertesting\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174AE203-DFB6-4C4E-B1FF-6A74E6E49DB6}|testingSum\\testingSum.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\testingsum\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{174AE203-DFB6-4C4E-B1FF-6A74E6E49DB6}|testingSum\\testingSum.csproj|solutionrelative:testingsum\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05DD09C2-7C7B-41BC-B8CF-286C408C1335}|ReverseNumberTesting\\ReverseNumberTesting.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\reversenumbertesting\\reversenumbertesting.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{05DD09C2-7C7B-41BC-B8CF-286C408C1335}|ReverseNumberTesting\\ReverseNumberTesting.csproj|solutionrelative:reversenumbertesting\\reversenumbertesting.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174AE203-DFB6-4C4E-B1FF-6A74E6E49DB6}|testingSum\\testingSum.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\testingsum\\sumoftwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{174AE203-DFB6-4C4E-B1FF-6A74E6E49DB6}|testingSum\\testingSum.csproj|solutionrelative:testingsum\\sumoftwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5352684F-62F9-43F1-B695-1CC0ABD0846E}|SimpleCalculatorApp\\SimpleCalculatorApp.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\simplecalculatorapp\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5352684F-62F9-43F1-B695-1CC0ABD0846E}|SimpleCalculatorApp\\SimpleCalculatorApp.csproj|solutionrelative:simplecalculatorapp\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\mysimplecalculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,20 +139,8 @@
       "RelativeMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|solutionrelative:mysimplecalculator\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\domain\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3615A091-E551-4A9C-9A75-C7325BF4F683}|Domain\\Domain.csproj|solutionrelative:domain\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\unittestinglecture\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1925D9FB-C58B-43DB-B927-9D1C10808BFF}|UnitTestingLecture\\UnitTestingLecture.csproj|solutionrelative:unittestinglecture\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F29B81E2-E79D-4B7E-BEB1-8110207E5439}|Domain.tests\\Domain.tests.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\domain.tests\\domain.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F29B81E2-E79D-4B7E-BEB1-8110207E5439}|Domain.tests\\Domain.tests.csproj|solutionrelative:domain.tests\\domain.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\mysimplecalculator\\mysimplecalculator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|solutionrelative:mysimplecalculator\\mysimplecalculator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93B700C1-F441-4A30-B1C5-3C3A98812D31}|MVVMCurrencyConverter\\MVVMCurrencyConverter.csproj|C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\mvvmcurrencyconverter\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -71,14 +159,6 @@
       "RelativeMoniker": "D:0:0:{CC3D756F-C8EA-42A4-8540-39DA6AC1E683}|MTApp\\MTApp.csproj|solutionrelative:mtapp\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|c:\\users\\arthu\\onedrive\\documentos\\github\\arthurportfolio\\mysimplecalculator\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE914C08-12F7-4D7F-B8E3-1F92DFC61C65}|MySimpleCalculator\\MySimpleCalculator.csproj|solutionrelative:mysimplecalculator\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBCB11C3-9A2A-4E4F-A113-17F1C6A9BFAD}|SyncThreads\\SyncThreads.csproj|C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\syncthreads\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBCB11C3-9A2A-4E4F-A113-17F1C6A9BFAD}|SyncThreads\\SyncThreads.csproj|solutionrelative:syncthreads\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DBCB11C3-9A2A-4E4F-A113-17F1C6A9BFAD}|SyncThreads\\SyncThreads.csproj|C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\syncthreads\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DBCB11C3-9A2A-4E4F-A113-17F1C6A9BFAD}|SyncThreads\\SyncThreads.csproj|solutionrelative:syncthreads\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -90,7 +170,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,124 +178,142 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\ReverseNumberTesting\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "ReverseNumberTesting\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\ReverseNumberTesting\\UnitTest1.cs",
-              "RelativeToolTip": "ReverseNumberTesting\\UnitTest1.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAmwC4AAAAMAAAA",
+              "DocumentIndex": 4,
+              "Title": "CancelBookingDto.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\CancelBookingDto.cs",
+              "RelativeDocumentMoniker": "Application\\CancelBookingDto.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\CancelBookingDto.cs",
+              "RelativeToolTip": "Application\\CancelBookingDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T21:29:11.764Z",
+              "WhenOpened": "2024-05-29T17:43:16.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Domain",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-29T11:18:35.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UnitTestingLecture",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLecture.csproj",
+              "RelativeDocumentMoniker": "UnitTestingLecture\\UnitTestingLecture.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLecture.csproj",
+              "RelativeToolTip": "UnitTestingLecture\\UnitTestingLecture.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-29T11:17:53.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookingRm.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\BookingRm.cs",
+              "RelativeDocumentMoniker": "Application\\BookingRm.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\BookingRm.cs",
+              "RelativeToolTip": "Application\\BookingRm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T11:14:00.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookDto.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\BookDto.cs",
+              "RelativeDocumentMoniker": "Application\\BookDto.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\BookDto.cs",
+              "RelativeToolTip": "Application\\BookDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T11:13:59.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Application",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\Application.csproj",
+              "RelativeDocumentMoniker": "Application\\Application.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\Application.csproj",
+              "RelativeToolTip": "Application\\Application.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-29T11:02:22.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Data",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Data\\Data.csproj",
+              "RelativeDocumentMoniker": "Data\\Data.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Data\\Data.csproj",
+              "RelativeToolTip": "Data\\Data.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-29T11:02:15.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\BookingService.cs",
+              "RelativeDocumentMoniker": "Application\\BookingService.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\BookingService.cs",
+              "RelativeToolTip": "Application\\BookingService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAEwCUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T11:00:54.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Application.csproj",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\Application.csproj",
+              "RelativeDocumentMoniker": "Application\\Application.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application\\Application.csproj",
+              "RelativeToolTip": "Application\\Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-29T11:00:03.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FlightApplicationSpecifications.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application.tests\\FlightApplicationSpecifications.cs",
+              "RelativeDocumentMoniker": "Application.tests\\FlightApplicationSpecifications.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application.tests\\FlightApplicationSpecifications.cs",
+              "RelativeToolTip": "Application.tests\\FlightApplicationSpecifications.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAawC0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:42:34.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SimpleCalculatorApp.csproj",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SimpleCalculatorApp\\SimpleCalculatorApp.csproj",
-              "RelativeDocumentMoniker": "SimpleCalculatorApp\\SimpleCalculatorApp.csproj",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SimpleCalculatorApp\\SimpleCalculatorApp.csproj",
-              "RelativeToolTip": "SimpleCalculatorApp\\SimpleCalculatorApp.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-11T22:23:28.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "MySimpleCalculator\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\WeatherForecast.cs",
-              "RelativeToolTip": "MySimpleCalculator\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Entities.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Data\\Entities.cs",
+              "RelativeDocumentMoniker": "Data\\Entities.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Data\\Entities.cs",
+              "RelativeToolTip": "Data\\Entities.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T21:53:12.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MySimpleCalculator.csproj",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\MySimpleCalculator.csproj",
-              "RelativeDocumentMoniker": "MySimpleCalculator\\MySimpleCalculator.csproj",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\MySimpleCalculator.csproj",
-              "RelativeToolTip": "MySimpleCalculator\\MySimpleCalculator.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-11T21:53:07.034Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CalculatorController.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\Controllers\\CalculatorController.cs",
-              "RelativeDocumentMoniker": "MySimpleCalculator\\Controllers\\CalculatorController.cs",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\Controllers\\CalculatorController.cs",
-              "RelativeToolTip": "MySimpleCalculator\\Controllers\\CalculatorController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T23:08:45.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\appsettings.json",
-              "RelativeDocumentMoniker": "MySimpleCalculator\\appsettings.json",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\appsettings.json",
-              "RelativeToolTip": "MySimpleCalculator\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-19T23:08:41.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\Program.cs",
-              "RelativeDocumentMoniker": "MySimpleCalculator\\Program.cs",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\Program.cs",
-              "RelativeToolTip": "MySimpleCalculator\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T23:08:37.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Usings.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\Usings.cs",
-              "RelativeDocumentMoniker": "UnitTestingLecture\\Usings.cs",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\Usings.cs",
-              "RelativeToolTip": "UnitTestingLecture\\Usings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T23:00:09.108Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Calculator.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SimpleCalculatorApp\\Calculator.cs",
-              "RelativeDocumentMoniker": "SimpleCalculatorApp\\Calculator.cs",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SimpleCalculatorApp\\Calculator.cs",
-              "RelativeToolTip": "SimpleCalculatorApp\\Calculator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T22:59:34.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitTestingLectureTests.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLectureTests.cs",
-              "RelativeDocumentMoniker": "UnitTestingLecture\\UnitTestingLectureTests.cs",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLectureTests.cs",
-              "RelativeToolTip": "UnitTestingLecture\\UnitTestingLectureTests.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAA2wEIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T21:28:50.731Z",
+              "WhenOpened": "2024-04-28T20:46:08.028Z",
               "EditorCaption": ""
             },
             {
@@ -226,26 +324,311 @@
               "RelativeDocumentMoniker": "Domain\\Flight.cs",
               "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\Flight.cs",
               "RelativeToolTip": "Domain\\Flight.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAcwBcAAAAdAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAEwCwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-31T18:11:18.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
+              "Title": "OverbookingError.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\OverbookingError.cs",
+              "RelativeDocumentMoniker": "Domain\\OverbookingError.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\OverbookingError.cs",
+              "RelativeToolTip": "Domain\\OverbookingError.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T23:45:38.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Booking.cs",
               "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\Booking.cs",
               "RelativeDocumentMoniker": "Domain\\Booking.cs",
               "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\Booking.cs",
               "RelativeToolTip": "Domain\\Booking.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T20:58:37.515Z"
+              "WhenOpened": "2024-04-16T20:58:37.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Domain.tests.csproj",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain.tests\\Domain.tests.csproj",
+              "RelativeDocumentMoniker": "Domain.tests\\Domain.tests.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain.tests\\Domain.tests.csproj",
+              "RelativeToolTip": "Domain.tests\\Domain.tests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-31T18:11:08.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Data.csproj",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Data\\Data.csproj",
+              "RelativeDocumentMoniker": "Data\\Data.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Data\\Data.csproj",
+              "RelativeToolTip": "Data\\Data.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-01T17:31:10.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Application.tests.csproj",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application.tests\\Application.tests.csproj",
+              "RelativeDocumentMoniker": "Application.tests\\Application.tests.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application.tests\\Application.tests.csproj",
+              "RelativeToolTip": "Application.tests\\Application.tests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-28T20:47:49.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SyncThreads\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "SyncThreads\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SyncThreads\\MainViewModel.cs",
+              "RelativeToolTip": "SyncThreads\\MainViewModel.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAewJkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T19:47:51.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BookingNotFoundError.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\BookingNotFoundError.cs",
+              "RelativeDocumentMoniker": "Domain\\BookingNotFoundError.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\BookingNotFoundError.cs",
+              "RelativeToolTip": "Domain\\BookingNotFoundError.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:02:24.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UnitTestingLecture.csproj",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLecture.csproj",
+              "RelativeDocumentMoniker": "UnitTestingLecture\\UnitTestingLecture.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLecture.csproj",
+              "RelativeToolTip": "UnitTestingLecture\\UnitTestingLecture.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-24T16:38:08.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Domain",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-29T11:08:29.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Application.tests",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application.tests\\Application.tests.csproj",
+              "RelativeDocumentMoniker": "Application.tests\\Application.tests.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Application.tests\\Application.tests.csproj",
+              "RelativeToolTip": "Application.tests\\Application.tests.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-29T11:04:48.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UnitTestingLectureTests.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLectureTests.cs",
+              "RelativeDocumentMoniker": "UnitTestingLecture\\UnitTestingLectureTests.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLectureTests.cs",
+              "RelativeToolTip": "UnitTestingLecture\\UnitTestingLectureTests.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-19T21:28:50.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MySimpleCalculator.csproj",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\MySimpleCalculator.csproj",
+              "RelativeDocumentMoniker": "MySimpleCalculator\\MySimpleCalculator.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\MySimpleCalculator.csproj",
+              "RelativeToolTip": "MySimpleCalculator\\MySimpleCalculator.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-11T21:53:07.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\Program.cs",
+              "RelativeDocumentMoniker": "MySimpleCalculator\\Program.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\Program.cs",
+              "RelativeToolTip": "MySimpleCalculator\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-19T23:08:37.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\appsettings.json",
+              "RelativeDocumentMoniker": "MySimpleCalculator\\appsettings.json",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\appsettings.json",
+              "RelativeToolTip": "MySimpleCalculator\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-19T23:08:41.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SimpleCalculatorApp.csproj",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SimpleCalculatorApp\\SimpleCalculatorApp.csproj",
+              "RelativeDocumentMoniker": "SimpleCalculatorApp\\SimpleCalculatorApp.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SimpleCalculatorApp\\SimpleCalculatorApp.csproj",
+              "RelativeToolTip": "SimpleCalculatorApp\\SimpleCalculatorApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-11T22:23:28.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\ReverseNumberTesting\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "ReverseNumberTesting\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\ReverseNumberTesting\\UnitTest1.cs",
+              "RelativeToolTip": "ReverseNumberTesting\\UnitTest1.cs",
+              "ViewState": "AQIAANwAAAAAAAAAAAAcwOgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T21:29:11.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CalculatorController.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\Controllers\\CalculatorController.cs",
+              "RelativeDocumentMoniker": "MySimpleCalculator\\Controllers\\CalculatorController.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\Controllers\\CalculatorController.cs",
+              "RelativeToolTip": "MySimpleCalculator\\Controllers\\CalculatorController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwA8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-19T23:08:45.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "MySimpleCalculator\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MySimpleCalculator\\WeatherForecast.cs",
+              "RelativeToolTip": "MySimpleCalculator\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:53:12.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\testingSum\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "testingSum\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\testingSum\\UnitTest1.cs",
+              "RelativeToolTip": "testingSum\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:59:03.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Usings.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\Usings.cs",
+              "RelativeDocumentMoniker": "UnitTestingLecture\\Usings.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\Usings.cs",
+              "RelativeToolTip": "UnitTestingLecture\\Usings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-19T23:00:09.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ReverseNumberTesting.csproj",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\ReverseNumberTesting\\ReverseNumberTesting.csproj",
+              "RelativeDocumentMoniker": "ReverseNumberTesting\\ReverseNumberTesting.csproj",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\ReverseNumberTesting\\ReverseNumberTesting.csproj",
+              "RelativeToolTip": "ReverseNumberTesting\\ReverseNumberTesting.csproj",
+              "ViewState": "AQIAAAIAAAAAAAAAAABRwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-27T18:03:48.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SumOfTwo.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\testingSum\\SumOfTwo.cs",
+              "RelativeDocumentMoniker": "testingSum\\SumOfTwo.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\testingSum\\SumOfTwo.cs",
+              "RelativeToolTip": "testingSum\\SumOfTwo.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAIwCUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:58:17.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SimpleCalculatorApp\\Calculator.cs",
+              "RelativeDocumentMoniker": "SimpleCalculatorApp\\Calculator.cs",
+              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SimpleCalculatorApp\\Calculator.cs",
+              "RelativeToolTip": "SimpleCalculatorApp\\Calculator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-19T22:59:34.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "Flight.cs",
               "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain.tests\\Flight.cs",
               "RelativeDocumentMoniker": "Domain.tests\\Flight.cs",
@@ -256,42 +639,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UnitTestingLecture.csproj",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLecture.csproj",
-              "RelativeDocumentMoniker": "UnitTestingLecture\\UnitTestingLecture.csproj",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\UnitTestingLecture\\UnitTestingLecture.csproj",
-              "RelativeToolTip": "UnitTestingLecture\\UnitTestingLecture.csproj",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-24T16:38:08.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 35,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MVVMCurrencyConverter\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MVVMCurrencyConverter\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MVVMCurrencyConverter\\MainWindow.xaml",
               "RelativeToolTip": "MVVMCurrencyConverter\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-31T18:10:53.18Z"
+              "WhenOpened": "2024-03-31T18:10:53.18Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Domain.tests.csproj",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain.tests\\Domain.tests.csproj",
-              "RelativeDocumentMoniker": "Domain.tests\\Domain.tests.csproj",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\Domain.tests\\Domain.tests.csproj",
-              "RelativeToolTip": "Domain.tests\\Domain.tests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-31T18:11:08.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 38,
               "Title": "IUser.cs",
               "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MTApp\\IUser.cs",
               "RelativeDocumentMoniker": "MTApp\\IUser.cs",
@@ -299,11 +659,12 @@
               "RelativeToolTip": "MTApp\\IUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T16:30:27.53Z"
+              "WhenOpened": "2024-03-24T16:30:27.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 37,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\MTApp\\Program.cs",
               "RelativeDocumentMoniker": "MTApp\\Program.cs",
@@ -311,30 +672,20 @@
               "RelativeToolTip": "MTApp\\Program.cs",
               "ViewState": "AQIAAFIAAAAAAAAAAAAcwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T16:30:26.14Z"
+              "WhenOpened": "2024-03-24T16:30:26.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 39,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SyncThreads\\App.xaml",
               "RelativeDocumentMoniker": "SyncThreads\\App.xaml",
               "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SyncThreads\\App.xaml",
               "RelativeToolTip": "SyncThreads\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-15T22:55:44.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SyncThreads\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "SyncThreads\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\arthu\\OneDrive\\Documentos\\GitHub\\ArthurPortfolio\\SyncThreads\\MainViewModel.cs",
-              "RelativeToolTip": "SyncThreads\\MainViewModel.cs",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAUwJkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T19:47:51.579Z"
+              "WhenOpened": "2024-02-15T22:55:44.843Z",
+              "EditorCaption": ""
             }
           ]
         }
